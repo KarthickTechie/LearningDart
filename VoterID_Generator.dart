@@ -88,6 +88,6 @@ class Applicant {
 }
 
 void main() {
-  var applicant1 = Applicant("Karthick", "1991-12-12");
+  var applicant1 = Applicant("Kevi", "2004-12-12");
   print(applicant1.toString());
 }
