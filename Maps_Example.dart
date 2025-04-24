@@ -319,6 +319,14 @@ void main() {
     //movies.forEach((m) => print((m['title'] as String).contains(movieName)));
     var mList =
         movies.where((movie) {
+          final k = movie.keys;
+
+          k.where((_k) {
+            if (movie[_k] is String) {
+              return (movie[_k] as String).toLowerCase().contains(movieName);
+            } else
+              return (movie[_k] as String).toLowerCase().contains(movieName);
+          }).toList();
           final title = (movie['title'] as String).toLowerCase();
           return title.contains(movieName.toLowerCase());
         }).toList();

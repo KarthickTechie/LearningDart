@@ -10,4 +10,7 @@ void main() {
 
   alphabets = [...alphabets, for (var i = 0; i < alphabets.length; i++) '$i'];
   print("collection for -> $alphabets");
+
+  List<String> someList = List.filled(100, 'Albercurque');
+  print(someList.length);
 }
