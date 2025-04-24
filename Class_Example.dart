@@ -45,3 +45,14 @@ void main() {
   var personConstant = const Person("ConstantPerson");
   print("from constant constructor => \"${personConstant._name}\"");
 }
+
+
+/*
+
+copy a project - git clone repourl 
+
+git clone https://github.com/KarthickTechie/LearningDart.git
+
+
+
+*/
