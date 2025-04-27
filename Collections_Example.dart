@@ -13,4 +13,21 @@ void main() {
 
   List<String> someList = List.filled(100, 'Albercurque');
   print(someList.length);
+
+  alphabets.insertAll(alphabets.length, ['A', 'B', 'C']);
+  print(alphabets);
+
+  // fillrange and replacerange
+
+  print(alphabets.getRange(0, 2));
+
+  alphabets.fillRange(0, 2, 'A');
+  print(alphabets);
+
+  // find first element satisfying some predicate or give default value
+
+  bool isVowel(String char) => char.length == 1 && 'AEIOU'.contains(char);
+
+  final firstVowel = alphabets.firstWhere(isVowel, orElse: () => '');
+  print('First Charector => $firstVowel');
 }
